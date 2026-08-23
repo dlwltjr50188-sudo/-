@@ -2,99 +2,111 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>아이의 요로감염, 집에서는 이렇게 돌봐주세요</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아이의 요로감염, 집에서 함께 돌보기</title>
 <style>
-:root{--bg:#fbf6ed;--card:#fffdf8;--text:#493b32;--muted:#76695f;--peach:#e9a17f;--peach2:#f8ddcf;--sage:#9eaf91;--sage2:#e8efe3;--line:#eadbca;--red:#c86f62}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.65}.wrap{max-width:1050px;margin:auto;padding:0 22px}
-.hero{padding:40px 0 25px}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}.badge{display:inline-block;background:var(--peach2);color:#a65f45;padding:9px 16px;border-radius:999px;font-weight:800}h1{font-size:clamp(36px,5vw,58px);line-height:1.12;letter-spacing:-2px;margin:20px 0 15px}.hero p{font-size:18px;color:var(--muted)}.note{background:var(--sage2);padding:18px 20px;border-radius:20px}
-.art{width:min(370px,90%);aspect-ratio:1.1;margin:auto;background:#fff5e8;border-radius:45%;position:relative;box-shadow:0 16px 45px #d7c5ae55}.head{width:170px;height:170px;background:#f7c99f;border-radius:50%;position:absolute;left:50%;top:54%;transform:translate(-50%,-50%)}.hair{position:absolute;width:150px;height:70px;background:#6c4c39;border-radius:70% 50% 45% 35%;top:-15px;left:8px;transform:rotate(-8deg)}.eye{position:absolute;width:11px;height:17px;background:#493b32;border-radius:50%;top:72px}.e1{left:53px}.e2{right:53px}.smile{position:absolute;width:48px;height:24px;border-bottom:5px solid #b86d58;border-radius:0 0 50px 50px;left:61px;top:93px}.star{position:absolute;right:25px;top:20px;font-size:40px;color:#f4cf76}.heart{position:absolute;left:28px;top:55px;font-size:28px;color:#e9a17f}
-.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:8px 0 45px}.quick a{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;text-decoration:none;font-weight:800}.quick span{display:block;font-size:24px}
-section{padding:20px 0 48px}h2{font-size:30px;letter-spacing:-1px;margin:0}.lead{color:var(--muted);margin:5px 0 18px}.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 8px 25px #d5c5b522}
-.checkGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.check{display:flex;gap:12px;background:#fffaf3;border:1px solid #f0dfcf;border-radius:16px;padding:15px}.check input{width:22px;height:22px;accent-color:var(--peach);margin-top:4px}.result{margin-top:18px;padding:17px;border-radius:17px;background:var(--sage2);font-weight:700}
-.infoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.info{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}.info .icon{font-size:30px}.info h3{margin:7px 0}.info p{margin:0;color:var(--muted)}
-.flow{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap}.step{flex:1 1 160px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center}.arrow{display:grid;place-items:center;font-size:24px;color:var(--peach)}.tip{border-left:5px solid var(--peach);background:#fff6ed;padding:15px 18px;border-radius:0 16px 16px 0;margin-top:18px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.good,.caution{border-radius:20px;padding:20px}.good{background:var(--sage2)}.caution{background:#fff0e8}.small{font-size:13px;color:var(--muted)}li{margin:7px 0}
-.faq{display:grid;gap:10px}details{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:16px 18px}summary{cursor:pointer;font-weight:800}details p{color:var(--muted);margin:12px 0 2px}
-.quizq{font-size:20px;font-weight:900;margin-bottom:12px}.answers{display:grid;gap:9px}.answers button{border:1px solid var(--line);background:#fffaf3;text-align:left;border-radius:13px;padding:13px 15px;cursor:pointer}.quizResult{display:none;margin-top:14px;padding:15px;border-radius:15px}
-.sources{font-size:13px;color:var(--muted);background:#f4ede3;border-radius:18px;padding:18px}.sources a{text-decoration:underline}footer{text-align:center;padding:30px 0 50px;color:#8b7d72;font-size:13px}
-@media(max-width:800px){.heroGrid,.two{grid-template-columns:1fr}.quick{grid-template-columns:repeat(2,1fr)}.infoGrid,.checkGrid{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:8px;width:100%}}
+:root{--bg:#F8F0E6;--paper:#FFFDF9;--paper2:#FFF8F0;--ink:#443A33;--muted:#776C63;--peach:#C9775C;--peach2:#F6DED1;--sage:#8FA486;--sage2:#E8EFE4;--line:#E7D8C9;--rose:#F8E9E4;--rose2:#EBC9BF}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;line-height:1.65}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:800px;margin:auto;padding-bottom:88px}.top{position:sticky;top:0;z-index:50;background:rgba(248,240,230,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.topin{padding:11px 16px;display:flex;justify-content:space-between}.logo{font-weight:900;font-size:14px}.topbtn{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 10px;color:#98533F;font-weight:800}.view{display:none}.view.active{display:block}.hero{padding:32px 18px 18px}.badge{display:inline-block;background:var(--peach2);color:#9B5944;padding:7px 13px;border-radius:999px;font-size:13px;font-weight:900}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:10px;align-items:center;margin-top:14px}h1{font-size:clamp(36px,8vw,56px);line-height:1.08;letter-spacing:-.07em;margin:12px 0 14px}.heroCopy{font-size:16px;color:var(--muted);margin:0}.heroNote{margin-top:15px;background:var(--sage2);padding:15px 17px;border-radius:18px;color:#5F7058;font-size:13px}.art{width:100%;max-width:290px;justify-self:end}.section{padding:12px 16px}.head{margin:7px 3px 13px}.head h2{font-size:27px;letter-spacing:-.05em;margin:0}.head p{margin:3px 0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.quickcard,.card{background:var(--paper);border:1px solid var(--line);border-radius:21px;padding:17px;box-shadow:0 10px 26px rgba(80,61,48,.07)}.quickcard{cursor:pointer}.quickcard .icon{font-size:26px}.quickcard h3{font-size:17px;margin:7px 0 3px}.quickcard p{margin:0;color:var(--muted);font-size:13px}.primary{width:100%;border:0;background:var(--peach);color:#fff;border-radius:16px;padding:13px 15px;font-weight:900}.secondary{border:1px solid var(--line);background:var(--paper);color:#8C4D3B;border-radius:13px;padding:10px 12px;font-weight:800}.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.detail{padding:20px 18px 7px}.mini{font-size:11px;color:var(--peach);font-weight:900;letter-spacing:.12em}.detail h2{font-size:34px;line-height:1.15;letter-spacing:-.06em;margin:4px 0 7px}.detail p{margin:0;color:var(--muted)}.back{border:0;background:none;color:#98533F;font-weight:900;padding:9px 16px}.choicegroup{margin-bottom:15px}.choicegroup h3{margin:0 0 7px;font-size:15px}.choices{display:flex;flex-wrap:wrap;gap:7px}.choices button{border:1px solid var(--line);background:var(--paper2);border-radius:13px;padding:9px 11px}.choices button.sel{background:var(--sage2);border-color:#B5C6AC;font-weight:900}.result{margin-top:14px;background:var(--sage2);padding:15px;border-radius:17px}.result h3{margin:0 0 5px;color:#5F7058}.result ul{margin:6px 0;padding-left:19px}.hidden{display:none!important}.checklist{display:grid;gap:8px}.check{display:flex;gap:9px;align-items:flex-start;background:#FFFAF4;border:1px solid var(--line);border-radius:15px;padding:12px}.check input{width:20px;height:20px;accent-color:var(--peach);margin-top:3px}.done span{text-decoration:line-through;color:#9B9088}.progress{height:8px;background:#EFE2D6;border-radius:99px;overflow:hidden;margin:7px 0}.bar{height:100%;width:0;background:var(--peach)}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.good{background:var(--sage2);border-radius:18px;padding:15px}.warn{background:var(--rose);border:1px solid var(--rose2);border-radius:18px;padding:15px}.good h3,.warn h3{margin:0 0 4px;font-size:17px}.good p,.warn p{margin:0;color:var(--muted);font-size:13px}.flow{display:flex;gap:7px;flex-wrap:wrap;align-items:stretch}.flowstep{flex:1 1 140px;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;font-size:13px;font-weight:800}.arrow{display:grid;place-items:center;color:var(--peach);font-weight:900}.tip{margin-top:11px;background:#FFF2E5;border-left:4px solid var(--peach);padding:12px 14px;border-radius:0 13px 13px 0;font-size:13px;color:#6A584E}.faq{display:grid;gap:8px}details{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:13px 15px}summary{font-weight:900;cursor:pointer}details p{color:var(--muted);font-size:14px;margin:9px 0 0}.field{margin-bottom:9px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:4px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:10px;background:#fff}.record{background:#FFF8F0;border-radius:14px;padding:10px;margin-top:8px;font-size:13px}.question{display:flex;justify-content:space-between;gap:8px;background:#FFF8F0;border-radius:12px;padding:9px;margin-top:7px;font-size:13px}.question button{border:0;background:none;color:#A45D47}.quizopt{display:grid;gap:8px}.quizopt button{border:1px solid var(--line);background:#FFFAF4;text-align:left;border-radius:12px;padding:11px}.correct{background:var(--sage2)!important;border-color:#B6C7AD!important}.wrong{background:var(--rose)!important;border-color:#E4BBB0!important}.footer{padding:32px 18px 8px;text-align:center;color:#8C7D71;font-size:11px}.sources{margin-top:12px;padding:12px;background:#F3EBE1;border-radius:15px;text-align:left}.bottom{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(800px,100%);display:grid;grid-template-columns:repeat(4,1fr);background:rgba(255,253,249,.96);border-top:1px solid var(--line);padding:8px 10px env(safe-area-inset-bottom);z-index:40}.bottom button{border:0;background:none;color:var(--muted);font-size:11px;font-weight:800}.bottom button.active{color:#98533F}.navicon{display:block;font-size:18px}@media(max-width:640px){.heroGrid{grid-template-columns:1fr}.art{justify-self:center;max-width:240px;order:-1}.grid,.two{grid-template-columns:1fr}.arrow{width:100%;height:8px;transform:rotate(90deg)}}
 </style>
 </head>
 <body>
-<header class="hero"><div class="wrap heroGrid">
-<div><div class="badge">♥ 보호자를 위한 건강 가이드</div>
-<h1>아이의 요로감염,<br><span style="color:#7e9974">집에서는 이렇게</span> 돌봐주세요</h1>
-<p>아이가 아플 때 무엇을 살펴보고, 평소에는 무엇을 실천하면 좋을지 한곳에서 확인해보세요.</p>
-<div class="note"><b>모든 것을 혼자 판단할 필요는 없어요.</b><br>평소와 다른 변화가 있거나 걱정되는 점이 있다면 의료진에게 알려주세요.</div></div>
-<div class="art" aria-label="아이를 상징하는 그림"><div class="star">★</div><div class="heart">♥</div><div class="head"><div class="hair"></div><i class="eye e1"></i><i class="eye e2"></i><div class="smile"></div></div></div>
-</div></header>
+<div class="top"><div class="topin"><div class="logo">아이의 요로감염, 집에서 함께 돌보기</div><button class="topbtn" onclick="showView('home')">처음</button></div></div>
+<main class="app">
 
-<main class="wrap">
-<nav class="quick"><a href="#check"><span>🔎</span>오늘 상태 확인</a><a href="#care"><span>🏠</span>집에서 관리</a><a href="#warning"><span>🚩</span>이럴 땐 알려주세요</a><a href="#quiz"><span>✓</span>1분 퀴즈</a></nav>
+<section id="home" class="view active">
+<div class="hero"><div class="badge">♥ 보호자를 위한 맞춤 건강 가이드</div>
+<div class="heroGrid"><div><h1>아이의 요로감염,<br><span style="color:#7F9775">집에서는 이렇게</span><br>돌봐주세요</h1><p class="heroCopy">검색해서 정보를 찾는 대신, 지금 우리 아이에게 필요한 내용을 골라보고 직접 확인해보세요.</p></div>
+<div class="art"><svg viewBox="0 0 320 290"><ellipse cx="160" cy="225" rx="120" ry="45" fill="#E8EFE4"/><circle cx="190" cy="112" r="74" fill="#F2C39C"/><path d="M134 112c-7-41 18-72 55-70 35 2 51 28 48 58-22-15-45-17-66-7-15 7-26 13-37 19z" fill="#6B4B38"/><circle cx="168" cy="125" r="5" fill="#443A33"/><circle cx="210" cy="125" r="5" fill="#443A33"/><path d="M175 145c12 10 26 10 38 0" fill="none" stroke="#A55F4A" stroke-width="5" stroke-linecap="round"/><circle cx="165" cy="137" r="9" fill="#E9A28F" opacity=".7"/><circle cx="221" cy="137" r="9" fill="#E9A28F" opacity=".7"/><path d="M75 118c-20-22-15-52 9-66 22-12 48 2 52 25 24-7 44 7 47 29 2 26-21 47-49 45-25-1-45-12-59-33z" fill="#91A486"/><circle cx="72" cy="56" r="15" fill="#E9A17F"/><text x="55" y="62" font-size="23">♥</text><circle cx="257" cy="36" r="24" fill="#F3CB73"/><path d="M248 35l7 8 13-17" fill="none" stroke="#FFFDF8" stroke-width="5" stroke-linecap="round"/></svg></div></div>
+<div class="heroNote"><b>이 사이트의 목적은 ‘검색’이 아니라 ‘실천’이에요.</b><br>우리 아이의 상태를 확인하고, 오늘 할 일을 기록하고, 다음 진료에서 물어볼 질문을 준비해보세요.</div></div>
 
-<section id="check"><h2>① 오늘 아이 상태 확인하기</h2><p class="lead">하나씩 체크하면서 평소와 다른 점이 있는지 살펴보세요.</p>
-<div class="card"><div class="checkGrid">
-<label class="check"><input type="checkbox" onchange="updateCheck()"> <span><b>열이 다시 나거나 계속되고 있나요?</b><br><span class="small">원인을 알기 어려운 발열은 주의해서 살펴보세요.</span></span></label>
-<label class="check"><input type="checkbox" onchange="updateCheck()"> <span><b>평소보다 잘 먹지 않거나 물을 잘 마시지 않나요?</b></span></label>
-<label class="check"><input type="checkbox" onchange="updateCheck()"> <span><b>평소보다 처지거나 보채는 모습이 있나요?</b><br><span class="small">어린아이는 불편함을 말로 표현하기 어려울 수 있어요.</span></span></label>
-<label class="check"><input type="checkbox" onchange="updateCheck()"> <span><b>소변을 볼 때 힘들어하거나 평소와 다른 모습이 있나요?</b></span></label>
-<label class="check"><input type="checkbox" onchange="updateCheck()"> <span><b>구토나 설사 같은 증상이 함께 있나요?</b></span></label>
-<label class="check"><input type="checkbox" onchange="updateCheck()"> <span><b>소변의 양이나 횟수 등 평소와 다른 변화가 있나요?</b></span></label>
-</div><div id="checkResult" class="result">체크한 내용이 있으면 아이의 상태를 기록해두고 의료진에게 알려주세요.</div></div></section>
-
-<section><h2>② 요로감염, 어렵지 않게 이해하기</h2><p class="lead">전문용어를 없애기보다, 용어의 뜻을 쉽게 풀어 설명했어요.</p>
-<div class="infoGrid"><div class="info"><div class="icon">🫘</div><h3>신장</h3><p>혈액을 걸러 소변을 만드는 기관이에요. 감염이 신장까지 올라가면 <b>신우신염</b>이라고 해요.</p></div>
-<div class="info"><div class="icon">💧</div><h3>방광</h3><p>소변을 잠시 모아두는 곳이에요. 세균이 들어와 증식하면 감염이 생길 수 있어요.</p></div>
-<div class="info"><div class="icon">🚻</div><h3>요도</h3><p>소변이 몸 밖으로 나가는 통로예요. 주변의 세균이 요로로 들어갈 수 있어요.</p></div></div>
-<div class="card" style="margin-top:16px"><h3>세균은 어떻게 요로까지 들어갈까요?</h3><div class="flow">
-<div class="step"><b>장에 있던 세균</b><br><span class="small">대장균 같은 세균</span></div><div class="arrow">→</div>
-<div class="step"><b>요도 주변으로 이동</b><br><span class="small">주변의 세균이 들어갈 수 있어요</span></div><div class="arrow">→</div>
-<div class="step"><b>방광으로 이동</b><br><span class="small">세균이 증식하면 감염이 생길 수 있어요</span></div><div class="arrow">→</div>
-<div class="step"><b>신장까지 퍼질 수 있음</b><br><span class="small">이 경우 신우신염이 될 수 있어요</span></div></div>
-<div class="tip"><b>중요해요.</b> 요로감염은 보호자가 무엇인가를 잘못해서만 생기는 질환이 아니에요. 아이의 해부학적 특성, 변비, 소변을 잘 비우지 못하는 문제, 요로의 구조적 문제 등 여러 요인이 영향을 줄 수 있어요.</div></div></section>
-
-<section id="care"><h2>③ 집에서 실천하는 관리 방법</h2><p class="lead">예방을 위해 매일 실천할 수 있는 행동을 중심으로 정리했어요.</p>
-<div class="two">
-<div class="good"><h3>💧 수분 섭취</h3><ul><li>필요한 수분량은 나이와 상태에 따라 달라요.</li><li>의료진이 수분 제한을 안내한 경우가 아니라면 평소 충분히 수분을 섭취하도록 도와주세요.</li></ul></div>
-<div class="good"><h3>🚻 배뇨 습관</h3><ul><li>소변이 마려운데도 오래 참지 않도록 도와주세요.</li><li>화장실을 사용할 수 있는 아이는 서두르지 않고 충분히 볼 수 있도록 해주세요.</li></ul></div>
-<div class="good"><h3>🥕 변비 관리</h3><ul><li>변비는 요로감염 재발과 관련될 수 있어요.</li><li>딱딱한 변이나 배변 시 통증이 지속되면 의료진과 상담하세요.</li></ul></div>
-<div class="good"><h3>🧼 기저귀·위생 관리</h3><ul><li>기저귀를 오래 젖은 상태로 두지 않고 자주 확인해주세요.</li><li>생식기 주변은 자극이 적게 부드럽게 관리해주세요.</li><li>배변 후에는 오염물이 요도 주변으로 퍼지지 않도록 주의해주세요.</li></ul></div>
+<div class="section"><div class="head"><h2>지금 필요한 것부터</h2><p>원하는 기능을 골라보세요.</p></div>
+<div class="grid">
+<div class="quickcard" onclick="showView('guide')"><div class="icon">🌱</div><h3>30초 맞춤 가이드</h3><p>연령·기저귀 사용·현재 상황에 따라 필요한 내용을 모아봐요.</p></div>
+<div class="quickcard" onclick="showView('record')"><div class="icon">📝</div><h3>오늘의 기록</h3><p>체온·섭취·소변·배변·증상을 남겨두세요.</p></div>
+<div class="quickcard" onclick="showView('visit')"><div class="icon">💬</div><h3>다음 진료 준비</h3><p>궁금한 질문을 미리 모아두세요.</p></div>
+<div class="quickcard" onclick="showView('check')"><div class="icon">✓</div><h3>오늘의 체크</h3><p>집에서 확인할 내용을 하나씩 점검해요.</p></div>
+<div class="quickcard" onclick="showView('learn')"><div class="icon">🔎</div><h3>요로감염 이해하기</h3><p>질병의 원인과 과정은 정확하게, 쉽게 알아봐요.</p></div>
+<div class="quickcard" onclick="showView('quiz')"><div class="icon">1분</div><h3>배운 내용 확인</h3><p>마지막에 퀴즈로 기억하고 있는지 확인해요.</p></div>
 </div>
-<div class="card" style="margin-top:16px"><h3>💊 항생제는 어떻게 관리할까요?</h3><p>세균에 의한 감염이 확인되면 의료진이 아이의 나이, 원인균, 알레르기, 감염 정도 등을 고려해 항생제를 선택할 수 있어요. <b>증상이 좋아졌다고 임의로 중단하거나 용량을 바꾸지 말고 처방받은 방법대로 사용하세요.</b> 복용이 어렵거나 부작용이 의심되면 의료진에게 문의하세요.</p></div></section>
+<div class="row"><button class="primary" onclick="showView('guide')">30초 맞춤 가이드 시작하기 →</button></div></div>
+</section>
 
-<section id="warning"><h2>④ 이런 변화가 있으면 의료진에게 알려주세요</h2><p class="lead">특히 어린아이는 증상을 정확하게 말하기 어려워 관찰이 중요해요.</p>
-<div class="two"><div class="caution"><h3>🚩 다시 열이 나요</h3><p>원인을 알 수 없는 발열이 반복되거나 치료 후 증상이 다시 나타난다면 의료진에게 알려주세요. 어린아이는 요로감염이 있어도 뚜렷한 배뇨 증상 대신 고열만 나타날 수 있어요.</p></div>
-<div class="caution"><h3>🚩 상태가 눈에 띄게 달라졌어요</h3><p>평소보다 심하게 처지거나 잘 먹지 못하고 반복적으로 구토하는 등 상태가 나빠지는 모습이 있으면 의료진의 평가가 필요할 수 있어요.</p></div>
-<div class="caution"><h3>🚩 소변과 관련된 변화가 있어요</h3><p>소변을 볼 때 아파하거나 소변 횟수·양이 평소와 크게 달라지는 등 변화가 있다면 기록해두고 알려주세요.</p></div>
-<div class="caution"><h3>🚩 치료 후 다시 증상이 생겼어요</h3><p>치료가 끝난 뒤 다시 발열이나 이전과 비슷한 증상이 나타난다면 남은 항생제를 임의로 먹이지 말고 의료진에게 상담하세요.</p></div></div></section>
+<section id="guide" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">30-SECOND GUIDE</div><h2>우리 아이에게<br>지금 필요한 건?</h2><p>세 가지만 골라주시면 필요한 내용을 모아서 보여드릴게요.</p></div>
+<div class="section"><div class="card">
+<div class="choicegroup"><h3>1. 아이의 연령대</h3><div class="choices"><button data-g="age" data-v="young">영아·어린 아이</button><button data-g="age" data-v="child">유아·학령기</button><button data-g="age" data-v="teen">청소년</button></div></div>
+<div class="choicegroup"><h3>2. 기저귀 사용</h3><div class="choices"><button data-g="diaper" data-v="yes">사용해요</button><button data-g="diaper" data-v="no">사용하지 않아요</button></div></div>
+<div class="choicegroup"><h3>3. 지금 상황</h3><div class="choices"><button data-g="situation" data-v="discharge">퇴원 후 관리</button><button data-g="situation" data-v="symptom">다시 아픈 것 같아요</button><button data-g="situation" data-v="prevention">예방이 궁금해요</button></div></div>
+<div id="guideResult" class="result hidden"></div></div></div></section>
 
-<section id="faq"><h2>⑤ 보호자가 자주 묻는 질문</h2><p class="lead">병원에서 설명을 들은 뒤에도 궁금할 수 있는 내용을 모았어요.</p>
-<div class="faq">
-<details><summary>Q. 요로감염은 한 번 생기면 또 생길 수 있나요?</summary><p>네. 일부 아이는 다시 요로감염이 생길 수 있어요. 반복적으로 발열을 동반한 감염이 생기는 경우에는 의료진이 추가 검사나 추적관찰을 권할 수 있어요.</p></details>
-<details><summary>Q. 변비가 왜 요로감염과 관련이 있나요?</summary><p>변비와 배뇨 기능의 문제는 아이의 요로감염 재발과 관련될 수 있어요. 변비가 지속된다면 함께 관리하는 것이 중요해요.</p></details>
-<details><summary>Q. 물을 많이 마시면 요로감염을 치료할 수 있나요?</summary><p>충분한 수분 섭취는 회복과 요로 건강에 도움이 될 수 있지만, 물만으로 세균성 감염을 치료할 수 있는 것은 아니에요. 필요한 경우 의료진의 진단과 항생제 치료가 필요해요.</p></details>
-<details><summary>Q. 아이가 소변을 오래 참는 습관이 있는데 괜찮을까요?</summary><p>소변을 지나치게 참는 습관은 방광을 완전히 비우는 데 어려움을 줄 수 있어요. 화장실을 사용할 수 있는 아이는 소변이 마려울 때 미루지 않고 충분히 비우도록 도와주세요.</p></details>
-<details><summary>Q. 기저귀를 사용하는 아이는 무엇을 가장 신경 써야 하나요?</summary><p>기저귀를 자주 확인하고 오래 젖은 상태로 두지 않는 것이 좋아요. 생식기 주변은 자극이 적게 부드럽게 관리해주세요.</p></details>
-<details><summary>Q. 치료가 끝났는데 다시 열이 나면 어떻게 해야 하나요?</summary><p>재감염이나 다른 원인이 있는지 확인이 필요할 수 있어요. 남은 항생제를 임의로 먹이지 말고 의료진에게 상담하세요.</p></details>
-<details><summary>Q. 요로감염이 반복되면 검사를 더 해야 하나요?</summary><p>아이의 나이, 감염 양상, 반복 횟수와 발열 여부 등에 따라 달라요. 필요한 경우 소변검사·소변배양검사나 초음파 등의 검사를 할 수 있어요.</p></details>
-<details><summary>Q. 보호자가 감염을 막지 못해서 생긴 건가요?</summary><p>그렇지 않아요. 요로감염은 한 가지 원인만으로 생기는 것이 아니며 여러 요인이 영향을 줄 수 있어요. 보호자는 예방 가능한 생활습관을 돕고 이상 변화를 관찰하면 돼요.</p></details>
-</div></section>
+<section id="record" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">TODAY'S RECORD</div><h2>오늘의 아이 상태<br>기록하기</h2><p>나중에 진료를 받을 때 상황을 설명하는 데 도움이 될 수 있어요.</p></div>
+<div class="section"><div class="card"><div class="field"><label>날짜</label><input id="rDate" type="date"></div><div class="field"><label>체온(℃)</label><input id="rTemp" type="number" step="0.1" placeholder="예: 38.7"></div><div class="field"><label>섭취</label><select id="rIntake"><option>평소와 비슷함</option><option>조금 줄음</option><option>많이 줄음</option><option>잘 먹지 못함</option></select></div><div class="field"><label>활력</label><select id="rActivity"><option>평소와 비슷함</option><option>보챔</option><option>처짐</option></select></div><div class="field"><label>소변</label><select id="rUrine"><option>평소와 비슷함</option><option>양이 줄어든 것 같음</option><option>배뇨가 불편해 보임</option><option>잘 모르겠음</option></select></div><div class="field"><label>배변</label><select id="rStool"><option>평소와 비슷함</option><option>변비가 의심됨</option><option>설사</option><option>잘 모르겠음</option></select></div><div class="field"><label>메모</label><textarea id="rMemo" rows="3" placeholder="구토, 통증, 약 복용 등 기억할 내용을 적어두세요."></textarea></div><div class="row"><button class="primary" onclick="saveRecord()">오늘 기록 저장</button><button class="secondary" onclick="clearRecords()">기록 삭제</button></div></div>
+<div class="card"><h3>기록 모아보기</h3><div id="recordList"></div></div><div class="tip"><b>중요:</b> 기록은 진단을 대신하지 않아요. 아이 상태가 걱정되면 기록을 끝내기 전에 의료진에게 상담하세요.</div></div></section>
 
-<section id="quiz"><h2>⑥ 1분 퀴즈</h2><p class="lead">읽은 내용을 실제 행동으로 연결해볼까요?</p>
-<div class="card"><div class="quizq">다음 중 아이의 요로감염 재발을 예방하는 데 도움이 되는 행동은 무엇일까요?</div>
-<div class="answers"><button onclick="quiz(false)">① 소변이 마려워도 최대한 오래 참게 한다.</button><button onclick="quiz(false)">② 변비가 있어도 요로와는 관계가 없으니 지켜본다.</button><button onclick="quiz(true)">③ 충분한 수분 섭취와 건강한 배뇨·배변 습관을 돕는다.</button><button onclick="quiz(false)">④ 열이 다시 나도 남은 항생제를 먼저 먹인다.</button></div>
-<div id="quizResult" class="quizResult"></div></div></section>
+<section id="check" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">DAILY CHECK</div><h2>오늘 아이 상태<br>한번 점검해볼까요?</h2><p>체크한 내용은 이 기기에서만 저장됩니다.</p></div><div class="section"><div class="card"><div class="progress"><div id="checkBar" class="bar"></div></div><p id="checkCount" class="small">0 / 6 완료</p><div class="checklist"><label class="check"><input type="checkbox"><span>열이 있는지, 있다면 시간과 체온을 확인했어요.</span></label><label class="check"><input type="checkbox"><span>평소보다 잘 먹지 않거나 수분 섭취가 줄지 않았는지 봤어요.</span></label><label class="check"><input type="checkbox"><span>평소보다 처지거나 보채는지 확인했어요.</span></label><label class="check"><input type="checkbox"><span>소변·기저귀 상태가 평소와 같은지 살펴봤어요.</span></label><label class="check"><input type="checkbox"><span>배변 상태가 평소와 같은지 확인했어요.</span></label><label class="check"><input type="checkbox"><span>평소와 다른 변화가 있으면 기록하고 의료진에게 알릴 준비를 했어요.</span></label></div></div></div></section>
 
-<section><div class="sources"><b>근거 자료</b><br>
-NIDDK, Bladder Infection in Children · Treatment for Bladder Infection in Children · Kidney Infection (Pyelonephritis)<br>
-NICE NG224, Urinary tract infection in under 16s: diagnosis and management<br>
-<a href="https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-infections-in-children" target="_blank">NIDDK 소아 요로감염 자료</a> · <a href="https://www.nice.org.uk/guidance/ng224" target="_blank">NICE NG224</a>
-</div></section>
+<section id="care" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">HOME CARE</div><h2>집에서 실천할<br>건강관리</h2><p>아이의 연령과 생활방식에 따라 방법을 골라보세요.</p></div><div class="section"><div class="two">
+<div class="card"><h3>🧺 기저귀를 사용하는 아이</h3><ul><li>기저귀를 자주 확인하고 소변·대변 후 오래 두지 않아요.</li><li>생식기 주변은 피부를 자극하지 않게 부드럽게 관리해요.</li></ul></div>
+<div class="card"><h3>🚽 화장실을 사용하는 아이</h3><ul><li>소변이 마려울 때 지나치게 오래 참지 않도록 도와주세요.</li><li>충분히 소변을 볼 수 있도록 시간과 환경을 마련해주세요.</li></ul></div>
+<div class="card"><h3>💧 수분</h3><ul><li>충분한 수분 섭취는 탈수 예방과 소변 배출에 도움이 될 수 있어요.</li><li>필요한 양은 아이의 상태에 따라 달라질 수 있어요.</li></ul></div>
+<div class="card"><h3>🥕 변비</h3><ul><li>변비와 배뇨기능 문제는 요로감염 재발과 관련될 수 있어요.</li><li>변비가 지속되면 아이의 연령에 맞는 관리 방법을 의료진과 상의하세요.</li></ul></div></div>
+<div class="card"><h3>💊 항생제</h3><p>세균에 의한 요로감염은 항생제로 치료할 수 있어요. 약의 종류와 기간은 감염의 정도, 아이의 상태, 원인균과 알레르기 등을 고려해 결정됩니다. <b>증상이 좋아졌다고 임의로 중단하거나 용량을 바꾸지 말고 처방받은 방법대로 사용하세요.</b> 부작용이나 복용이 어려우면 의료진에게 문의하세요.</p></div></div></section>
+
+<section id="warning" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">WHEN TO CONTACT</div><h2>이럴 때는<br>의료진에게 알려주세요</h2><p>사이트가 진단을 대신하지 않도록 ‘관찰 후 의료진과 연결’에 초점을 맞췄어요.</p></div><div class="section"><div class="two">
+<div class="warn"><h3>🌡 다시 열이 나요</h3><p>원인이 뚜렷하지 않은 발열이 생기거나 치료 후 다시 열이 나면 의료진에게 알려주세요.</p></div>
+<div class="warn"><h3>😴 상태가 눈에 띄게 달라요</h3><p>평소보다 심하게 처지거나 잘 먹지 못하고 반복적으로 토하는 등 상태가 나빠지면 의료진의 평가가 필요할 수 있어요.</p></div>
+<div class="warn"><h3>🚽 소변이 달라요</h3><p>배뇨통, 소변 횟수·양의 뚜렷한 변화, 탁하거나 피가 섞여 보이는 소변 등이 있다면 알려주세요.</p></div>
+<div class="warn"><h3>🔁 치료 후 다시 증상이 생겨요</h3><p>남은 항생제를 임의로 먹이지 말고 언제부터 어떤 변화가 있었는지 기록해 의료진과 상담하세요.</p></div></div></div></section>
+
+<section id="visit" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">NEXT VISIT</div><h2>다음 진료에서<br>무엇을 물어볼까요?</h2><p>궁금한 질문을 미리 모아두면 진료 때 놓치기 쉬운 내용을 확인하기 좋아요.</p></div><div class="section">
+<div class="card"><h3>추천 질문</h3><div class="checklist"><label class="check"><input type="checkbox"><span>우리 아이의 검사 결과는 무엇을 의미하나요?</span></label><label class="check"><input type="checkbox"><span>다시 열이 나면 언제 병원에 연락해야 하나요?</span></label><label class="check"><input type="checkbox"><span>추후 소변검사나 영상검사가 필요한가요?</span></label><label class="check"><input type="checkbox"><span>반복되는 감염을 줄이기 위해 집에서 무엇을 특히 관찰해야 하나요?</span></label><label class="check"><input type="checkbox"><span>현재 처방받은 약은 언제까지, 어떻게 사용하나요?</span></label></div></div>
+<div class="card"><h3>내 질문 추가하기</h3><div class="row"><input id="qInput" style="flex:1;min-width:200px;border:1px solid var(--line);border-radius:12px;padding:10px" placeholder="예: 변비는 어떻게 관리하면 좋을까요?"><button class="primary" style="width:auto" onclick="addQuestion()">저장</button></div><div id="questionList"></div></div></div></section>
+
+<section id="learn" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">UNDERSTAND</div><h2>요로감염을<br>정확하게 이해하기</h2><p>전문용어는 쓰되, 바로 뜻을 설명해드려요.</p></div><div class="section">
+<div class="card"><h3>요로는 무엇인가요?</h3><p><b>신장 → 요관 → 방광 → 요도</b>로 이어지는 소변의 통로예요. 신장은 소변을 만들고, 방광은 소변을 모아두며, 요도는 소변을 몸 밖으로 내보냅니다.</p></div>
+<div class="flow"><div class="flowstep">🫘 신장<br><span class="small">소변을 만들어요</span></div><div class="arrow">→</div><div class="flowstep">〰️ 요관<br><span class="small">방광으로 보내요</span></div><div class="arrow">→</div><div class="flowstep">💧 방광<br><span class="small">소변을 모아요</span></div><div class="arrow">→</div><div class="flowstep">↘ 요도<br><span class="small">밖으로 내보내요</span></div></div>
+<div class="card" style="margin-top:12px"><h3>세균은 어떻게 감염을 일으키나요?</h3><p>소아 요로감염은 대부분 세균 때문에 생겨요. 흔한 원인 중 하나가 <b>대장균(E. coli)</b>이며, 장 주변의 세균이 요도 주변으로 이동해 요로로 들어갈 수 있어요. 감염이 방광에서 위쪽 요로로 퍼지면 신장 감염인 <b>신우신염</b>이 될 수 있습니다.</p><div class="tip"><b>보호자가 잘못해서 생긴 병이라고 단정할 수 없어요.</b> 반복 감염에는 변비, 배뇨·방광 기능 문제, 요로의 구조적 이상이나 방광-요관 역류 등 여러 요인이 영향을 줄 수 있어요.</div></div></div></section>
+
+<section id="faq" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">FAQ</div><h2>보호자가 자주 묻는 질문</h2><p>퇴원 후 실제 상황과 다음 진료에 도움이 되는 질문을 모았어요.</p></div><div class="section"><div class="faq">
+<details><summary>요로감염은 다시 생길 수 있나요?</summary><p>네. 일부 아동에서는 재발할 수 있어요. 반복 감염이 있으면 아이의 위험요인에 따라 추가 검사나 추적관찰이 필요할 수 있습니다.</p></details>
+<details><summary>변비가 왜 요로감염과 관련이 있나요?</summary><p>변비와 배뇨기능의 문제는 반복되는 요로감염과 관련될 수 있어요. 변비가 지속되면 아이의 연령과 상태에 맞는 관리 방법을 의료진과 상의하세요.</p></details>
+<details><summary>물을 많이 마시면 요로감염을 치료할 수 있나요?</summary><p>충분한 수분 섭취는 수분 상태와 소변 배출에 도움이 되지만, 세균성 감염을 물만으로 치료할 수 있는 것은 아니에요. 필요한 경우 의료진의 치료가 필요합니다.</p></details>
+<details><summary>치료가 끝났는데 다시 열이 나면요?</summary><p>재감염이나 다른 원인이 있는지 확인이 필요할 수 있어요. 남은 항생제를 임의로 먹이지 말고 체온과 아이의 상태를 기록해 의료진에게 상담하세요.</p></details>
+<details><summary>반복되면 예방적 항생제를 꼭 써야 하나요?</summary><p>아니요. 예방적 항생제는 모든 아동에게 일률적으로 사용하는 것이 아니며, 반복 감염의 양상과 원인, 요로의 문제 등을 평가해 의료진이 결정합니다.</p></details>
+<details><summary>내가 잘못 관리해서 생긴 건가요?</summary><p>그렇게 단순하게 생각할 필요는 없어요. 여러 요인이 영향을 줄 수 있으므로 보호자는 예방 가능한 건강관리와 이상 변화 관찰에 집중하면 됩니다.</p></details>
+</div></div></section>
+
+<section id="quiz" class="view"><button class="back" onclick="showView('home')">← 처음으로</button><div class="detail"><div class="mini">1-MINUTE QUIZ</div><h2>배운 내용을<br>확인해볼까요?</h2><p>시험이 아니라, 집에서 할 행동을 다시 확인하는 시간이에요.</p></div><div class="section"><div class="card"><h3>다음 중 요로감염 재발 예방에 도움이 될 수 있는 행동은?</h3><div class="quizopt"><button onclick="quiz(false)">① 소변이 마려워도 최대한 오래 참게 한다.</button><button onclick="quiz(false)">② 변비가 있어도 요로와는 관계가 없으니 지켜본다.</button><button onclick="quiz(true)">③ 충분한 수분 섭취와 건강한 배뇨·배변 습관을 돕는다.</button><button onclick="quiz(false)">④ 이전에 남은 항생제를 다시 사용한다.</button></div><div id="quizResult" class="hidden result"></div></div></div></section>
+
+<section class="section"><div class="sources"><b>근거 자료</b><br>NIDDK 소아 요로감염의 증상·원인·진단·치료·예방 자료 / NICE NG224(16세 미만 요로감염 진단 및 관리)<br><br>본 자료는 보호자 교육용이며 진료·처방을 대신하지 않습니다.</div></section>
+<footer>아이의 요로감염, 보호자와 함께 건강하게 관리하기</footer>
 </main>
-<footer><b>아이의 요로감염, 보호자와 함께 건강하게 관리하기</b><br>본 자료는 보호자 교육을 위한 자료이며 진료나 처방을 대신하지 않습니다.</footer>
+
+<nav class="bottom"><button data-view="home" class="active"><span class="navicon">⌂</span>홈</button><button data-view="guide"><span class="navicon">🌱</span>맞춤</button><button data-view="visit"><span class="navicon">💬</span>진료준비</button><button data-view="check"><span class="navicon">✓</span>체크</button></nav>
+
 <script>
-function updateCheck(){const n=document.querySelectorAll('#check input:checked').length;const e=document.getElementById('checkResult');e.textContent=n===0?'체크한 내용이 있으면 아이의 상태를 기록해두고 의료진에게 알려주세요.':n<3?'평소와 다른 변화가 '+n+'가지 있어요. 변화의 시점과 정도를 기록해두고 필요하면 의료진에게 알려주세요.':'평소와 다른 변화가 여러 가지 있어요. 아이의 상태를 기록하고 의료진에게 상담받는 것을 권합니다.'}
-function quiz(ok){const e=document.getElementById('quizResult');e.style.display='block';e.style.background=ok?'var(--sage2)':'#fff0e8';e.textContent=ok?'정답이에요! 충분한 수분 섭취, 건강한 배뇨·배변 습관은 요로 건강을 유지하는 데 도움이 됩니다.':'다시 생각해보세요. 소변을 오래 참게 하거나 남은 항생제를 임의로 사용하는 것보다, 수분 섭취와 건강한 배뇨·배변 습관을 돕는 것이 중요해요.'}
+const views=[...document.querySelectorAll('.view')], nav=[...document.querySelectorAll('.bottom button')];
+function showView(id){views.forEach(v=>v.classList.remove('active'));const t=document.getElementById(id);if(t){t.classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}nav.forEach(n=>n.classList.toggle('active',n.dataset.view===id))}
+nav.forEach(n=>n.onclick=()=>showView(n.dataset.view));
+
+const gs={age:null,diaper:null,situation:null};
+document.querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>{gs[b.dataset.g]=b.dataset.v;document.querySelectorAll('[data-g="'+b.dataset.g+'"]').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');renderGuide()});
+function renderGuide(){if(!gs.age||!gs.diaper||!gs.situation)return;let a=[];if(gs.situation==='symptom')a.push('체온과 증상이 시작된 시간을 기록하고, 원인을 알기 어려운 발열이나 상태 악화가 있으면 의료진에게 상담하세요.');if(gs.situation==='discharge')a.push('처방받은 약은 지시에 맞게 사용하고 열·섭취량·소변·배변의 변화를 관찰하세요.');if(gs.situation==='prevention')a.push('수분 섭취와 건강한 배뇨·배변 습관, 기저귀·생식기 주변 위생을 중심으로 관리하세요.');if(gs.diaper==='yes')a.push('기저귀를 자주 확인하고 대변을 본 경우 오래 두지 않으며 생식기 주변을 자극 없이 관리하세요.');else a.push('소변을 지나치게 참지 않고 충분히 볼 수 있는 습관을 도와주세요. 변비도 함께 살펴보세요.');if(gs.age==='young')a.push('어린 아이는 배뇨통을 말하지 못할 수 있어 발열·보챔·섭취 감소·구토·설사 등 전반적인 변화를 함께 살펴보세요.');else if(gs.age==='child')a.push('배뇨통·잦은 소변·급한 소변·소변 변화와 함께 열이 있는지 살펴보세요.');else a.push('배뇨통·빈뇨·절박뇨·소변 변화와 발열 여부를 확인하고 불편한 점을 말할 수 있도록 도와주세요.');const e=document.getElementById('guideResult');e.classList.remove('hidden');e.innerHTML='<h3>우리 아이에게 지금 필요한 내용</h3><ul>'+a.map(x=>'<li>'+x+'</li>').join('')+'</ul><div class="row"><button class="secondary" onclick="showView(\'record\')">오늘 기록하기</button><button class="secondary" onclick="showView(\'care\')">집에서 관리</button><button class="secondary" onclick="showView(\'warning\')">이상 시 확인</button></div>'}
+
+function saveRecord(){const r={date:document.getElementById('rDate').value||new Date().toISOString().slice(0,10),temp:document.getElementById('rTemp').value,intake:document.getElementById('rIntake').value,activity:document.getElementById('rActivity').value,urine:document.getElementById('rUrine').value,stool:document.getElementById('rStool').value,memo:document.getElementById('rMemo').value};const a=JSON.parse(localStorage.getItem('uti_records')||'[]');a.unshift(r);localStorage.setItem('uti_records',JSON.stringify(a.slice(0,30)));renderRecords();alert('오늘 기록을 저장했어요.')}
+function renderRecords(){const a=JSON.parse(localStorage.getItem('uti_records')||'[]'),e=document.getElementById('recordList');e.innerHTML=a.length?a.map(r=>'<div class="record"><b>'+r.date+'</b> · 체온 '+(r.temp||'-')+'℃<br><span class="small">섭취 '+r.intake+' · 활력 '+r.activity+' · 소변 '+r.urine+' · 배변 '+r.stool+'<br>메모 '+(r.memo||'없음')+'</span></div>').join(''):'<span class="small">아직 저장된 기록이 없어요.</span>'}
+function clearRecords(){localStorage.removeItem('uti_records');renderRecords()}
+renderRecords();
+
+const cs=[...document.querySelectorAll('#check input')];
+function updateChecks(){const n=cs.filter(x=>x.checked).length;document.getElementById('checkBar').style.width=(n/cs.length*100)+'%';document.getElementById('checkCount').textContent=n+' / '+cs.length+' 완료';cs.forEach(x=>x.closest('.check').classList.toggle('done',x.checked));localStorage.setItem('uti_checks',JSON.stringify(cs.map(x=>x.checked)))}
+try{const a=JSON.parse(localStorage.getItem('uti_checks')||'[]');cs.forEach((x,i)=>x.checked=!!a[i])}catch(e){}
+cs.forEach(x=>x.onchange=updateChecks);updateChecks();
+
+function addQuestion(){const i=document.getElementById('qInput'),t=i.value.trim();if(!t)return;const a=JSON.parse(localStorage.getItem('uti_questions')||'[]');a.push(t);localStorage.setItem('uti_questions',JSON.stringify(a));i.value='';renderQuestions()}
+function removeQuestion(i){const a=JSON.parse(localStorage.getItem('uti_questions')||'[]');a.splice(i,1);localStorage.setItem('uti_questions',JSON.stringify(a));renderQuestions()}
+function renderQuestions(){const e=document.getElementById('questionList'),a=JSON.parse(localStorage.getItem('uti_questions')||'[]');e.innerHTML=a.map((q,i)=>'<div class="question"><span>'+q+'</span><button onclick="removeQuestion('+i+')">×</button></div>').join('')}
+renderQuestions();
+
+function quiz(ok){const e=document.getElementById('quizResult');e.classList.remove('hidden');e.style.background=ok?'var(--sage2)':'var(--rose)';e.textContent=ok?'정답이에요. 충분한 수분 섭취와 건강한 배뇨·배변 습관을 돕는 것이 요로 건강 관리에 도움이 될 수 있어요.':'다시 생각해보세요. 소변을 오래 참게 하거나 남은 항생제를 임의로 사용하는 것은 권하지 않아요.'}
 </script>
 </body></html>
