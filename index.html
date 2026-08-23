@@ -152,7 +152,7 @@ function shuffle(a){return [...a].sort(()=>Math.random()-0.5)}
 function renderQuiz(){
  currentQuiz=shuffle(quizBank).slice(0,3);
  const box=document.getElementById('quizBox');
- box.innerHTML='<div class="quizMeta"><span>10문제 중 무작위 3문제</span><span id="quizScore">0 / 3</span></div>'+currentQuiz.map((it,i)=>'<div class="card" id="qq'+i+'"><h3>'+(i+1)+'. '+it.q+'</h3><div class="quizopt">'+shuffle(it.o.map((text,idx)=>({text,idx}))).map(x=>'<button data-q="'+i+'" data-a="'+x.idx+'" onclick="answerQuiz(this,'+i+','+x.idx+')">'+x.text+'</button>').join('')+'</div><div id="fb'+i+'" class="quizResult hidden"></div></div>').join('')+'<button class="secondary" onclick="renderQuiz();window.scrollTo({top:0,behavior:\\'smooth\\'})">다른 문제 다시 풀기</button>';
+ box.innerHTML='<div class="quizMeta"><span>10문제 중 무작위 3문제</span><span id="quizScore">0 / 3</span></div>'+currentQuiz.map((it,i)=>'<div class="card" id="qq'+i+'"><h3>'+(i+1)+'. '+it.q+'</h3><div class="quizopt">'+shuffle(it.o.map((text,idx)=>({text,idx}))).map(x=>'<button data-q="'+i+'" data-a="'+x.idx+'" onclick="answerQuiz(this,'+i+','+x.idx+')">'+x.text+'</button>').join('')+'</div><div id="fb'+i+'" class="quizResult hidden"></div></div>').join('')+'<button class="secondary" onclick="renderQuiz();window.scrollTo({top:0,behavior:\"smooth\"})">다른 문제 다시 풀기</button>';
 }
 let score=0,answered=new Set();
 function answerQuiz(btn,qidx,aidx){
